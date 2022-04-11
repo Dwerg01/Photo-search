@@ -6,63 +6,103 @@
 }
 
 :root {
-    --margin: 
+    font-family: 'Megrim', cursive;
+    --margin: 2px;
 }
  body { 
      overflow-x: hidden;
+     background-color: hsla(208, 48%, 20%, 0.331);
 }
 
 #main {
     width: 100vw;
-    margin: calc(100% - 2rem, 1200px);
+    text-align: center;
+    justify-content: center;
 }
 
 #nav-bar {
-    display: flex;
+    display: inline-flex;
     padding: 1rem;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 2rem);
+    max-width: 76.5rem;
+    height: 20rem;
+    background-image: url("https://images.unsplash.com/photo-1649583693539-f36f908da137?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
-.nav-group {
-    display: flex;
-}
-
-.nav-group form input {
+#search-bar {
+    padding-left: 0.5rem;
+    cursor:text;
+    height: 32px;
+    font-size: 16px;
     border: none;
-    padding: 0 0.2rem auto;
-    height: 100%;
+
 }
 
-
-
-.nav-group ul {
-    display: flex;
-    padding: 0 0.2rem auto;
-    height: 100%;
+button {
+    cursor: pointer;
+    float: right;
+    border: none;
+    height: 32px;
+    padding-right: 0.4rem;
+    width:32px;
 }
+
 
 #pic-container {
+    width: calc(100vw - 2rem);
+    max-width: 76.5rem;
     display: flex;
-    justify-content: space-between;
-    background-color: darkgray;
+    justify-content: center;
+    margin: 0 auto;    
 }
 
-.pic-column {
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 100%;
+.div-column {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+}
+
+.pic-thumb {
+    width: 100%;
+    z-index: 0;
+    margin: 0.5rem 0.5rem 0 0 ;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    color:hsla(208, 48%, 20%, 0);
+}
+
+.pic-thumb:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.25s;
+    color:hsl(177, 67%, 77%);
+    opacity: 0.8;    
+}
+
+.pic-detail {
+    position: absolute;
+    top: 5px;
+    left:10px;
+    z-index:0.1;
+    padding: 2px 4px;   
+}
+
+.pic-detail:hover {
+    background-color: hsla(0, 0%, 19%, 0.503);
+    border-radius: 4px;
+
 }
 
 
-.margin-left {
-    margin-left: 20px;
-}
 
 
-.margin-right {
-    margin-right: 20px;
+footer {
+    bottom: 0;
+    left: 50%;
+    margin: 0 auto;
 }
+

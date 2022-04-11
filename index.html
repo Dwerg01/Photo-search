@@ -6,35 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="App.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://use.fontawesome.com/366410f7d2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
     <title>UnsplashAPI</title>
 </head>
 <body>
     <div id="main">
         <div id="nav-bar">
-            <div class="nav-group" id="main-search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
-                    <path d="M2 0h28a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" fill="#05A081"></path>
-                    <path d="M13 21h3.863v-3.752h1.167a3.124 3.124 0 1 0 0-6.248H13v10zm5.863 2H11V9h7.03a5.124 5.124 0 0 1 .833 10.18V23z" fill="#fff"></path>
-                </svg>
                 <form type="submit" id="search-form">
-                    <input form="search-form" type="text" id="search-bar" placeholder="Search" value="gymnast" autofocus required>
+                    <input for="search-form" type="text" id="search-bar" placeholder="Search" autofocus required>
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </form>
-            </div>
-            <div class="nav-group" id="main-menu">
-                <ul id="options-list">
-                    <li>Explore</li>
-                    <li>License</li>
-                    <li>Upload</li>
-                    <li>...</li>
-                </ul>
-                <button>Go to Pexels</button>
-            </div>
         </div>
-        <div id="pic-container" class="margin-left margin-right">
-            <div id="left" class="pic-column margin-right">left</div>
-            <div class="pic-column margin-right">middle</div>
-            <div class="pic-column">right</div>
+        <div id="pic-container" class="container">
+            <div class="div-column" id="column1"></div>
+            <div class="div-column" id="column2"></div>
+            <div class="div-column" id="column3"></div>
         </div>
     </div>
+
 </body>
 </html>
